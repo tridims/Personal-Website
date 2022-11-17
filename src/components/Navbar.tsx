@@ -18,13 +18,15 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './ThemeToggleButton'
 import { IoLogoGithub } from 'react-icons/io5'
 
+// create types NavLinkProps that accept href, path, target, children, and other multiple props
 type NavLinkProps = {
   href: string
-  path: string
-  target: string
+  path?: string
+  target?: string
   children: React.ReactNode
-  props: any
-}
+  [x: string]: any
+} 
+
 
 const LinkItem = ({ href, path, target, children, ...props }: NavLinkProps) => {
   const active = path === href
@@ -46,6 +48,7 @@ const LinkItem = ({ href, path, target, children, ...props }: NavLinkProps) => {
 
 const Navbar = (props: any) => {
   const { path } = props
+  const githubUrl = 'https://github.com/tridims/dimastri.studio'
 
   return (
     <Box
@@ -61,9 +64,9 @@ const Navbar = (props: any) => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        flexWrap="wrap"
+        alignItems="center"
+        justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -85,12 +88,9 @@ const Navbar = (props: any) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">
-            Uses
-          </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href={githubUrl}
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -102,7 +102,7 @@ const Navbar = (props: any) => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} alignItems="end" >
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -123,12 +123,9 @@ const Navbar = (props: any) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="https://uses.craftz.dog/" passHref>
-                  <MenuItem as={Link}>Uses</MenuItem>
-                </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href={githubUrl}
                 >
                   View Source
                 </MenuItem>
