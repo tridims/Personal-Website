@@ -1,13 +1,14 @@
 import NextLink from "next/link";
+import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import { Box, Text, LinkBox, LinkOverlay } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
 
 type GridItemProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   href: string;
   title: string;
-  thumbnail: string;
+  thumbnail: StaticImageData;
 };
 
 export const GridItem = ({
@@ -42,7 +43,7 @@ export const WorkGridItem = ({
   children: React.ReactNode;
   id: string;
   title: string;
-  thumbnail: string;
+  thumbnail: StaticImageData;
 }) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`} passHref scroll={false}>

@@ -1,21 +1,21 @@
-import { M_PLUS_Rounded_1c } from "@next/font/google";
+import { Inter } from "@next/font/google";
 import { NextPage } from "next";
 import React from "react";
 
-const Fonts = () => (
+const FontMPlus = () => (
   <style jsx global>{`
     @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;700&display=swap");
   `}</style>
 );
 
-export default Fonts;
+export default FontMPlus;
 
-const fontVar = M_PLUS_Rounded_1c({
+const fontVar = Inter({
   style: "normal",
   weight: ["300", "700"],
   display: "swap",
 });
 
-// export default function Fonts({ children }: { children: React.ReactNode }) {
-//   return <main className={fontVar.className}>{children}</main>;
-// }
+export function FontInter({ children }: { children: React.ReactNode }) {
+  return <div className={fontVar.className}>{children}</div>;
+}

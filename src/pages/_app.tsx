@@ -23,7 +23,7 @@ const MyApp = ({ Component, pageProps: { session, ...pageProps }, router }) => {
               window.scrollTo({ top: 0 });
             }}
           >
-            <Component {...pageProps} />
+            <Component {...pageProps} key={router.route} />
           </AnimatePresence>
         </Layout>
       </SessionProvider>

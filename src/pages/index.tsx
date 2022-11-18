@@ -104,7 +104,7 @@ const Home: NextPage = () => {
               <Link>here.</Link>
             </NextLink>
           </Paragraph>
-          <Box my={4} alignItems="center">
+          <Box my={4} textAlign="center">
             <NextLink href="/works" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My portfolio
@@ -189,14 +189,6 @@ const Home: NextPage = () => {
               </Link>
             </ListItem>
           </List>
-
-          <Box alignItems="center" my={4}>
-            <NextLink href="/posts" passHref scroll={false}>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                Popular posts
-              </Button>
-            </NextLink>
-          </Box>
         </Section>
       </Container>
     </Layout>
