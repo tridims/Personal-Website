@@ -24,7 +24,7 @@ type NavLinkProps = {
   path?: string;
   target?: string;
   children: React.ReactNode;
-  [x: string]: any;
+  [x: string]: string | number | boolean | object;
 };
 
 const LinkItem = ({ href, path, target, children, ...props }: NavLinkProps) => {
@@ -45,7 +45,7 @@ const LinkItem = ({ href, path, target, children, ...props }: NavLinkProps) => {
   );
 };
 
-const Navbar = (props: any) => {
+const Navbar = (props) => {
   const { path } = props;
   const githubUrl = "https://github.com/tridims/dimastri.studio";
 
@@ -64,7 +64,7 @@ const Navbar = (props: any) => {
         p={2}
         maxW="container.md"
         flexWrap="wrap"
-        alignItems="center"
+        textAlign="center"
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
