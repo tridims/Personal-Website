@@ -3,26 +3,31 @@ import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 
 import { trpc } from "../utils/trpc";
-
-import { ChakraProvider } from "@chakra-ui/react";
-import chakraTheme from "../lib/ChakraTheme";
 import Fonts from "../components/Fonts";
+import Layout from "../layouts/Main";
+import Chakra from "../components/Chakra";
+import { AnimatePresence } from "framer-motion";
 
 import "../styles/globals.css";
 
-const MyApp: AppType<{ session: Session | null }> = ({
-  Component,
-  pageProps: { session, ...pageProps },
-  router,
-}) => {
+const MyApp = ({ Component, pageProps: { session, ...pageProps }, router }) => {
   return (
-    <ChakraProvider theme={chakraTheme}>
+    <Chakra cookies={pageProps.cookies}>
       <Fonts />
       <SessionProvider session={session}>
-        <Component {...pageProps} />
+        <Layout router={router}>
+          <AnimatePresence
+            exitBeforeEnter
+            initial={true}
+            onExitComplete={() => {
+              window.scrollTo({ top: 0 });
+            }}
+          >
+            <Component {...pageProps} />
+          </AnimatePresence>
+        </Layout>
       </SessionProvider>
-      {/* </Fonts> */}
-    </ChakraProvider>
+    </Chakra>
   );
 };
 

@@ -96,7 +96,11 @@ const Home: NextPage = () => {
             Machine Learning, and Security. Not yet to decide which one i would
             really want, but i belive that learning all of those will be helpful
             in building good stuff in the future. You can checkout my website in{" "}
-            <NextLink href="https://www.dimastri.online" passHref>
+            <NextLink
+              href="https://www.dimastri.online"
+              passHref
+              legacyBehavior
+            >
               <Link>here.</Link>
             </NextLink>
           </Paragraph>
@@ -185,23 +189,6 @@ const Home: NextPage = () => {
               </Link>
             </ListItem>
           </List>
-
-          {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            <GridItem
-              href="https://www.youtube.com/devaslife"
-              title="Dev as Life"
-              thumbnail={thumbYouTube}
-            >
-              My YouTube channel (&gt;100k subs)
-            </GridItem>
-            <GridItem
-              href="https://www.inkdrop.app/"
-              title="Inkdrop"
-              thumbnail={thumbInkdrop}
-            >
-              A Markdown note-taking app
-            </GridItem>
-          </SimpleGrid> */}
 
           <Box alignItems="center" my={4}>
             <NextLink href="/posts" passHref scroll={false}>

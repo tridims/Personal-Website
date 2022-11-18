@@ -12,7 +12,6 @@ const Main = ({
   return (
     <Box as="main" pb={8}>
       <Navbar path={router.asPath} />
-
       <Container maxW="container.md" pt={14}>
         {children}
         <Footer />

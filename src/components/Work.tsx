@@ -8,7 +8,7 @@ type ChildrenOnlyProps = {
 
 export const Title = ({ children }: ChildrenOnlyProps) => (
   <Box>
-    <NextLink href="/works" passHref>
+    <NextLink href="/works" passHref legacyBehavior>
       <Link>Works</Link>
     </NextLink>
     <span>
