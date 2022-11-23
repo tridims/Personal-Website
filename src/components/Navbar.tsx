@@ -64,7 +64,8 @@ const Navbar = (props) => {
         p={2}
         maxW="container.md"
         flexWrap="wrap"
-        textAlign="center"
+        // textAlign="center"
+        textAlign="end"
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
@@ -73,7 +74,7 @@ const Navbar = (props) => {
           </Heading>
         </Flex>
 
-        <Stack
+        {/* <Stack
           direction={{ base: "column", md: "row" }}
           display={{ base: "none", md: "flex" }}
           width={{ base: "full", md: "auto" }}
@@ -99,7 +100,7 @@ const Navbar = (props) => {
             <IoLogoGithub />
             Source
           </LinkItem>
-        </Stack>
+        </Stack> */}
 
         <Box flex={1} alignItems="end">
           <ThemeToggleButton />
