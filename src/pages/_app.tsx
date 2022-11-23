@@ -2,7 +2,6 @@ import { type AppType } from "next/app";
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 
-import { trpc } from "../utils/trpc";
 import Fonts from "../components/Fonts";
 import Layout from "../layouts/Main";
 import Chakra from "../components/Chakra";
@@ -31,4 +30,4 @@ const MyApp = ({ Component, pageProps: { session, ...pageProps }, router }) => {
   );
 };
 
-export default trpc.withTRPC(MyApp);
+export default MyApp;

@@ -1,9 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import NextLink from "next/link";
-import { signIn, signOut, useSession } from "next-auth/react";
-
-import { trpc } from "../utils/trpc";
 
 import {
   Link,
