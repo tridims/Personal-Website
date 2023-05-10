@@ -60,10 +60,7 @@ const Home: NextPage = () => {
               <Heading as="h2" variant="page-title">
                 Dimas Tri Mustakim
               </Heading>
-              <p>
-                Computer Science Student | Software Engineeering, Cloud
-                Computing, Machine Learning| Open Source and Tech Enthusiast
-              </p>
+              <p>Computer Science Student | Open Source and Tech Enthusiast</p>
             </Box>
             <Box
               flexShrink={0}
