@@ -8,8 +8,6 @@ const FontMPlus = () => (
   `}</style>
 );
 
-export default FontMPlus;
-
 const fontVar = Inter({
   style: "normal",
   weight: ["300", "700"],
@@ -17,6 +15,15 @@ const fontVar = Inter({
   subsets: ["latin-ext"],
 });
 
-export function FontInter({ children }: { children: React.ReactNode }) {
+function FontInter({ children }: { children: React.ReactNode }) {
   return <div className={fontVar.className}>{children}</div>;
 }
+
+const FontHack = () => (
+  <style jsx global>{`
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.css");
+  `}</style>
+);
+
+export default FontMPlus;
+export { FontInter, FontHack };
