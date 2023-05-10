@@ -61,8 +61,8 @@ const Home: NextPage = () => {
                 Dimas Tri Mustakim
               </Heading>
               <p>
-                Digital Craftsman ( Developer ) | Open Source and Tech
-                Enthusiast
+                Computer Science Student | Software Engineeering, Cloud
+                Computing, Machine Learning| Open Source and Tech Enthusiast
               </p>
             </Box>
             <Box

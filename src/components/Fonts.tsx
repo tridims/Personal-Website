@@ -14,6 +14,7 @@ const fontVar = Inter({
   style: "normal",
   weight: ["300", "700"],
   display: "swap",
+  subsets: ["latin-ext"],
 });
 
 export function FontInter({ children }: { children: React.ReactNode }) {

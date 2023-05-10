@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps: { session, ...pageProps }, router }) => {
       <SessionProvider session={session}>
         <Layout router={router}>
           <AnimatePresence
-            exitBeforeEnter
+            mode="wait"
             initial={true}
             onExitComplete={() => {
               window.scrollTo({ top: 0 });
