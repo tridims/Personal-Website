@@ -78,19 +78,13 @@ const Home: NextPage = () => {
                 borderRadius="full"
                 overflow="hidden"
               >
-                {/* <ProfileImage
+                <ProfileImage
                   // src="/images/dimas.jpg"
                   src="https://storage.googleapis.com/dicoding-gce-course/dimas.jpg"
                   alt="Profile image"
                   borderRadius="full"
                   width="100%"
                   height="100%"
-                /> */}
-
-                <Image
-                  src="https://storage.googleapis.com/dicoding-gce-course/dimas.jpg"
-                  alt="Profile image"
-                  layout="fill"
                 />
               </Box>
             </Box>
