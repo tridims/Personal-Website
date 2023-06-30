@@ -79,8 +79,7 @@ const Home: NextPage = () => {
                 overflow="hidden"
               >
                 <ProfileImage
-                  // src="/images/dimas.jpg"
-                  src="https://storage.googleapis.com/dicoding-gce-course/dimas.jpg"
+                  src="/images/dimas.jpg"
                   alt="Profile image, Hosted at Google Cloud Storage"
                   borderRadius="full"
                   width="100%"
