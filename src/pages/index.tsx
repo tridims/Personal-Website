@@ -93,6 +93,7 @@ const Home: NextPage = () => {
             <Heading as="h3" variant="section-title">
               Work
             </Heading>
+            {/* SUPER OLD */}
             {/* <Paragraph>
               I am a student in Brawijaya University in my second year.
               Currently I have interest in Software Engineering, Full-Stack
@@ -100,7 +101,9 @@ const Home: NextPage = () => {
               which one i would really want, but i belive that learning all of
               those will be helpful in building good stuff in the future.
             </Paragraph> */}
-            <Paragraph>
+
+            {/* OLD */}
+            {/* <Paragraph>
               I am a computer science student who is passionate about learning
               and growing. I am currently looking for early professional
               experience. I am open to working in a group environment as well as
@@ -116,6 +119,26 @@ const Home: NextPage = () => {
               technologies quickly by listen to lessons in college, reading
               documentation and tutorials online, as well as building small
               project.
+            </Paragraph> */}
+
+            {/* NEW */}
+            <Paragraph>
+              I am a passionate computer science student eager to learn and grow
+              in the field. I thrive in both collaborative group environments
+              and independent work settings. My ultimate career goal is to
+              become an exceptional software engineer, dedicated to building
+              cutting-edge technologies. I possess a knack for quickly adapting
+              to new technologies through leveraging various available
+              resources.
+            </Paragraph>
+            <Paragraph>
+              I am well versed in software engineering and backend development.
+              I am proficient in programming languages such as Python, Go and
+              Javascript/Typescript. I also enjoy building things using
+              different tech stack. Beyond technical skills, I actively seek
+              opportunities to develop my management and interpersonal skills.
+              Throughout my career and studies, I have gained gained valuable
+              experience by working on various projects.
             </Paragraph>
             <Box my={4} textAlign="center">
               <NextLink
@@ -158,14 +181,19 @@ const Home: NextPage = () => {
               Hobbies
             </Heading>
             <Paragraph>
-              My hobbies are pretty diverse. I love exploring tech-related
-              stuff, trying different tech stacks, and creating some small
-              projects. I also like reading books, mangas, and watching youtube
-              videos.
+              My hobbies are quite diverse, and I particularly enjoy building
+              things using a wide range of tech stacks. I love exploring various
+              tech-related subjects, trying out different technologies, and
+              creating small projects. In my free time, I find joy in
+              experimenting with and utilizing different programming languages,
+              deploying and exploring a variety of open-source applications that
+              catch my attention, and building my own mini-lab on my computer.
+              Additionally, I also like playing games, reading books, enjoying
+              manga, and watching YouTube videos.
             </Paragraph>
           </Section>
 
-          <Section delay={0.4}>
+          {/* <Section delay={0.4}>
             <Heading as="h3" variant="section-title">
               Blog
             </Heading>
@@ -184,7 +212,7 @@ const Home: NextPage = () => {
                 </Button>
               </NextLink>
             </Box>
-          </Section>
+          </Section> */}
 
           <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
@@ -201,6 +229,21 @@ const Home: NextPage = () => {
                     @tridims (Dimas Tri)
                   </Button>
                 </Link>
+                {/* <Box my={4} textAlign="center">
+                  <NextLink
+                    href="https://github.com/tridims"
+                    target="_blank"
+                    scroll={false}
+                  >
+                    <Button
+                      leftIcon={<IoLogoGithub />}
+                      colorScheme="teal"
+                      marginRight={5}
+                    >
+                      @tridims (Dimas Tri)
+                    </Button>
+                  </NextLink>
+                </Box> */}
               </ListItem>
               <ListItem>
                 <Link href="https://twitter.com/trididev" target="_blank">
