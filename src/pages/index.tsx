@@ -142,7 +142,7 @@ const Home: NextPage = () => {
             </Paragraph>
             <Box my={4} textAlign="center">
               <NextLink
-                href="https://www.notion.so/Portofolio-Dimas-Tri-Mustakim-377bf502fef8477e889905ae50a439fd"
+                href="https://tridims.notion.site/Some-of-My-Works-5b58dbfbacd5407b9ed2d081d7cbb0b9?pvs=4"
                 scroll={false}
                 target="_blank"
               >
@@ -154,7 +154,11 @@ const Home: NextPage = () => {
                   My portfolio
                 </Button>
               </NextLink>
-              <NextLink href="#" scroll={false} target="_blank">
+              <NextLink
+                href="https://drive.google.com/drive/folders/19rGVpcNTq9CmksqC_H6OVbIxyvk0Decf?usp=sharing"
+                scroll={false}
+                target="_blank"
+              >
                 <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                   My CV
                 </Button>
