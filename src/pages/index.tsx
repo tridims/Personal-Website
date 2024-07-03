@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
             css={{ backdropFilter: "blur(10px)" }}
           >
-            Hello, I&apos;m a computer science student from Indonesia.
+            Hello, I&apos;m a Developer and a Startup Founder from Indonesia.
           </Box>
 
           <Box display={{ md: "flex" }}>
@@ -60,7 +60,8 @@ const Home: NextPage = () => {
               <Heading as="h2" variant="page-title">
                 Dimas Tri Mustakim
               </Heading>
-              <p>Computer Science Student | Open Source and Tech Enthusiast</p>
+              <p> Developer | Open Source and Tech Enthusiast</p>
+              <a href="mailto:me@dimastri.com">me@dimastri.com</a>
             </Box>
             <Box
               flexShrink={0}
@@ -79,7 +80,7 @@ const Home: NextPage = () => {
                 overflow="hidden"
               >
                 <ProfileImage
-                  src="/images/dimas.jpg"
+                  src="/images/bangkit.jpg"
                   alt="Profile image, Hosted at Google Cloud Storage"
                   borderRadius="full"
                   width="100%"
@@ -93,52 +94,22 @@ const Home: NextPage = () => {
             <Heading as="h3" variant="section-title">
               Work
             </Heading>
-            {/* SUPER OLD */}
-            {/* <Paragraph>
-              I am a student in Brawijaya University in my second year.
-              Currently I have interest in Software Engineering, Full-Stack
-              Development, Machine Learning, and Security. Not yet to decide
-              which one i would really want, but i belive that learning all of
-              those will be helpful in building good stuff in the future.
-            </Paragraph> */}
-
-            {/* OLD */}
-            {/* <Paragraph>
-              I am a computer science student who is passionate about learning
-              and growing. I am currently looking for early professional
-              experience. I am open to working in a group environment as well as
-              working alone, and I enjoy working with people who are also
-              interested in learning and improving. My short-term career goals
-              include becoming a software engineer and in the long term want to
-              make software as a service startup.
+            <Paragraph>
+              I am a passionate developer eager to learn and grow in the field.
+              I thrive in both collaborative group environments and independent
+              work settings. My ultimate career goal is to become an exceptional
+              software engineer, dedicated to building cutting-edge
+              technologies. I possess a knack for quickly adapting to new
+              technologies through leveraging various available resources.
             </Paragraph>
             <Paragraph>
-              I have worked with computer programming since before entering
-              college, where I learned how to program and then taught myself
-              more advanced concepts. I have been able to pick up new
-              technologies quickly by listen to lessons in college, reading
-              documentation and tutorials online, as well as building small
-              project.
-            </Paragraph> */}
-
-            {/* NEW */}
-            <Paragraph>
-              I am a passionate computer science student eager to learn and grow
-              in the field. I thrive in both collaborative group environments
-              and independent work settings. My ultimate career goal is to
-              become an exceptional software engineer, dedicated to building
-              cutting-edge technologies. I possess a knack for quickly adapting
-              to new technologies through leveraging various available
-              resources.
-            </Paragraph>
-            <Paragraph>
-              I am well versed in software engineering and backend development.
-              I am proficient in programming languages such as Python, Go and
-              Javascript/Typescript. I also enjoy building things using
-              different tech stack. Beyond technical skills, I actively seek
-              opportunities to develop my management and interpersonal skills.
-              Throughout my career and studies, I have gained gained valuable
-              experience by working on various projects.
+              I am well versed in backend development, devops, and cloud
+              infrastructure. I am proficient in programming languages such as
+              Python, Go and Javascript/Typescript. I also enjoy building things
+              using different tech stack. Beyond technical skills, I actively
+              seek opportunities to develop my management and interpersonal
+              skills. Throughout my career and studies, I have gained gained
+              valuable experience by working on various projects.
             </Paragraph>
             <Box my={4} textAlign="center">
               <NextLink
@@ -171,10 +142,6 @@ const Home: NextPage = () => {
               Bio
             </Heading>
             <BioSection>
-              <BioYear>2001</BioYear>
-              Born in Batu City, East Java, Indonesia.
-            </BioSection>
-            <BioSection>
               <BioYear>2020</BioYear>
               Started education in Brawijaya University, Computer Science Major.
             </BioSection>
@@ -192,8 +159,8 @@ const Home: NextPage = () => {
               experimenting with and utilizing different programming languages,
               deploying and exploring a variety of open-source applications that
               catch my attention, and building my own mini-lab on my computer.
-              Additionally, I also like playing games, reading books, enjoying
-              manga, and watching YouTube videos.
+              Additionally, I also like playing games, reading books, manga, and
+              watching movies, anime, as well as youtube.
             </Paragraph>
           </Section>
 
@@ -230,7 +197,7 @@ const Home: NextPage = () => {
                     colorScheme="teal"
                     leftIcon={<IoLogoGithub />}
                   >
-                    @tridims (Dimas Tri)
+                    My Github. @tridims
                   </Button>
                 </Link>
                 {/* <Box my={4} textAlign="center">
@@ -249,7 +216,7 @@ const Home: NextPage = () => {
                   </NextLink>
                 </Box> */}
               </ListItem>
-              <ListItem>
+              {/* <ListItem>
                 <Link href="https://twitter.com/trididev" target="_blank">
                   <Button
                     variant="ghost"
@@ -259,18 +226,7 @@ const Home: NextPage = () => {
                     @trididev
                   </Button>
                 </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="https://instagram.com/dmstr_31" target="_blank">
-                  <Button
-                    variant="ghost"
-                    colorScheme="teal"
-                    leftIcon={<IoLogoInstagram />}
-                  >
-                    @dmstr_31
-                  </Button>
-                </Link>
-              </ListItem>
+              </ListItem> */}
               <ListItem>
                 <Link
                   href="https://www.linkedin.com/in/dimastrim"
@@ -281,7 +237,7 @@ const Home: NextPage = () => {
                     colorScheme="teal"
                     leftIcon={<IoLogoLinkedin />}
                   >
-                    Dimas Tri Mustakim
+                    My LinkedIn Profile
                   </Button>
                 </Link>
               </ListItem>
@@ -292,21 +248,32 @@ const Home: NextPage = () => {
                     colorScheme="teal"
                     leftIcon={<FaKaggle />}
                   >
-                    Dimas Tri Mustakim
+                    My Kaggle Profile
                   </Button>
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="https://www.medium.com/@tridim" target="_blank">
+                <Link href="https://www.medium.com/@tridims" target="_blank">
                   <Button
                     variant="ghost"
                     colorScheme="teal"
                     leftIcon={<IoLogoMedium />}
                   >
-                    Dimas Tri Mustakim
+                    My Medium Blog Post
                   </Button>
                 </Link>
               </ListItem>
+              {/* <ListItem>
+                <Link href="https://dev.to/tridims" target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<IoLogoGithub />}
+                  >
+                    My Dev.to Profile
+                  </Button>
+                </Link>
+              </ListItem> */}
             </List>
           </Section>
         </Container>
