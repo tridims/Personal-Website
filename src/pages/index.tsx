@@ -125,14 +125,12 @@ const Home: NextPage = () => {
                   My portfolio
                 </Button>
               </NextLink>
-              <NextLink
-                href="https://drive.google.com/drive/folders/19rGVpcNTq9CmksqC_H6OVbIxyvk0Decf?usp=sharing"
-                scroll={false}
-                target="_blank"
-              >
-                <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                  My CV
-                </Button>
+              <NextLink href="/public/static/files/CV.pdf" passHref scroll={false}>
+                <Link target="_blank" rel="noopener noreferrer">
+                  <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                    My CV
+                  </Button>
+                </Link>
               </NextLink>
             </Box>
           </Section>
