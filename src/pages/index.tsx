@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                   My portfolio
                 </Button>
               </NextLink>
-              <NextLink href="/public/static/files/CV.pdf" passHref scroll={false}>
+              <NextLink href="/static/files/CV.pdf" passHref scroll={false}>
                 <Link target="_blank" rel="noopener noreferrer">
                   <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                     My CV
